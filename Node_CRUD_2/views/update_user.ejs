@@ -1,0 +1,125 @@
+<!-- include header -->
+<%- include('include/_header')%>
+<!-- /include header -->
+
+<!-- main Site -->
+<main id="site-main">
+  <div class="container">
+
+    <div class="">
+      <a href="/" class="btn btn-primary"
+        >All User<i class="bi bi-chevron-double-left"></i>
+      </a>
+    </div>
+
+    <div class="text-center">
+      <h2>Update User</h2>
+      <span>Use the below form to Update an account</span>
+    </div>
+
+    <div class="card mt-3 text-center" style="width: 70%">
+      <div class="card-body">
+        <!-- main Site -->
+        <main id="site-main">
+          <div class="container">
+            <form action="" method="POST" id="upate_user">
+              <div class="card mt-3" style="width: 70%">
+                <div class="card-body">
+                  <form>
+                    <div class="mb-3">
+                      <label for="exampleInputEmail1" class="form-label"
+                        >Email address</label
+                      >
+                      <input
+                        type="email"
+                        class="form-control"
+                        id="exampleInputEmail1"
+                        aria-describedby="emailHelp"
+                      />
+                      <div id="emailHelp" class="form-text">
+                        We'll never share your email with anyone else.
+                      </div>
+                    </div>
+                    <div class="mb-3">
+                      <label for="exampleInputPassword1" class="form-label"
+                        >Password</label
+                      >
+                      <input
+                        type="password"
+                        class="form-control"
+                        id="exampleInputPassword1"
+                      />
+                    </div>
+
+                    <div class="d-flex">
+                      <div class="form-check">
+                        <input
+                          class="form-check-input"
+                          type="radio"
+                          name="gender"
+                          id="flexRadioDefault1"
+                        />
+                        <label class="form-check-label" for="flexRadioDefault1">
+                          Male
+                        </label>
+                      </div>
+
+                      <div class="form-check">
+                        <input
+                          class="form-check-input"
+                          type="radio"
+                          name="gender"
+                          id="flexRadioDefault2"
+                        />
+                        <label class="form-check-label" for="flexRadioDefault1">
+                          FeMale
+                        </label>
+                      </div>
+                    </div>
+
+                    <div class="d-flex">
+                      <div class="form-check">
+                        <input
+                          class="form-check-input"
+                          type="radio"
+                          name="status"
+                          value="Active"
+                        />
+                        <label class="form-check-label" for="flexRadioDefault1">
+                          Active
+                        </label>
+                      </div>
+
+                      <div class="form-check">
+                        <input
+                          class="form-check-input"
+                          type="radio"
+                          name="status"
+                          value="Inactive"
+                        />
+                        <label class="form-check-label" for="flexRadioDefault1">
+                          Inactive
+                        </label>
+                      </div>
+                    </div>
+
+                    <button type="submit" class="btn btn-primary">
+                      Submit
+                    </button>
+                  </form>
+                </div>
+              </div>
+            </form>
+          </div>
+        </main>
+        <!-- /main Site -->
+      </div>
+    </div>
+
+  </div>
+</main>
+<!-- /main Site -->
+
+<!-- include footer -->
+<%- include('include/_footer')%>
+<!-- /include footer -->
