@@ -38,7 +38,7 @@ connectDB();
  */
 
 // parse request to body-parser
-app.use(bodyParser.json());
+app.use(bodyParser.urlencoded({extended:true}));
 
 /**
  * In Express.js, the use() method is responsible for setting up middleware functions and routers.
