@@ -23,7 +23,7 @@
         <main id="site-main">
           <div class="container">
 
-            <form action="" method="POST" id="upate_user">
+            <form method="POST" id="update_user">
               <div class="card mt-3" style="width: 70%">
                 <div class="card-body">
                   
@@ -57,7 +57,7 @@
                           class="form-check-input"
                           type="radio"
                           name="gender"
-                          value="Male"<%= user.gender == 'Male' ? 'checked' :''%>
+                          value="Male"<%= user.gender == 'male' ? 'checked' :''%>
                           id="flexRadioDefault1"
                         />
                         <label class="form-check-label" for="flexRadioDefault1">
@@ -70,11 +70,11 @@
                           class="form-check-input"
                           type="radio"
                           name="gender"
-                          value="Female"<%= user.gender == 'Female' ? 'checked' :''%>
+                          value="Female"<%= user.gender == 'female' ? 'checked' :''%>
                           id="flexRadioDefault2"
                         />
                         <label class="form-check-label" for="flexRadioDefault1">
-                          FeMale
+                          Female
                         </label>
                       </div>
                     </div>
@@ -107,9 +107,8 @@
                       </div>
                     </div>
 
-                    <button type="submit" class="btn btn-primary">
-                      Submit
-                    </button>
+                    <input type="submit" class="btn btn-primary" value="submit">
+                 
               
                 </div>
               </div>
